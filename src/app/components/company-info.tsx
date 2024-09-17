@@ -34,7 +34,7 @@ export default function CompanyInfo({ companyId }: CompanyInfoProps) {
         <p className="pb-3">{`Category: ${company.categoryTitle}`}</p>
         <p className="pb-3">{`Country: ${company.countryTitle}`}</p>
         <p className="pb-3">{`Joined date: ${new Date(
-          company.joinedDate
+          company.joinedDate,
         ).toLocaleDateString('uk')}`}</p>
         <div className="w-full h-px my-8 bg-gray-300" />
         <p>{company.description}</p>
